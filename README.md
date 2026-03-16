@@ -1,3 +1,3 @@
-# my-hw-2
+# my-hw-3
 
-This is my HW-2 👨‍💻
+This is my HW-3 👨‍💻
