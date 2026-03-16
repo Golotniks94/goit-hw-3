@@ -47,20 +47,13 @@ button {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 /* #endregion */
 
-/* CONTAINER */
-.container {
-  max-width: 1158px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* HIDDEN TITLE */
+/* visually hidden */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -72,6 +65,15 @@ img {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+/* CONTAINER */
+.container {
+  max-width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* SECTION */
@@ -88,8 +90,10 @@ img {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+
   color: var(--primary-color);
   text-decoration: none;
+  margin-right: 76px;
 }
 
 .logo-studio-header {
@@ -108,7 +112,6 @@ img {
 
 .nav-list {
   display: flex;
-  margin-left: 76px;
   gap: 40px;
 }
 
@@ -118,6 +121,8 @@ img {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
+  letter-spacing: 0.02em;
+
   color: var(--dark-color);
   text-decoration: none;
 }
@@ -144,6 +149,7 @@ img {
 .header-contacts-list {
   display: flex;
   gap: 40px;
+  letter-spacing: 0.02em;
 }
 
 .header-contacts-link {
@@ -168,6 +174,11 @@ img {
 }
 
 .hero-title {
+  max-width: 496px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 48px;
+
   font-size: 56px;
   line-height: 1.07;
   font-weight: 700;
@@ -176,6 +187,13 @@ img {
 
 /* HERO BUTTON */
 .hero-button {
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  border-radius: 4px;
+  margin: 0 auto;
+
   background-color: var(--primary-color);
   color: var(--white-color);
   font-size: 16px;
@@ -204,6 +222,7 @@ img {
   font-size: 20px;
   line-height: 1.2;
   color: var(--dark-color);
+  margin-bottom: 8px;
 }
 
 .features-text {
@@ -232,6 +251,7 @@ img {
   text-align: center;
   text-transform: capitalize;
   color: var(--dark-color);
+  margin-bottom: 72px;
 }
 
 .team-caption {
@@ -239,11 +259,17 @@ img {
   font-size: 20px;
   line-height: 1.2;
   color: var(--dark-color);
+
+  text-align: center;
+  margin-top: 32px;
+  margin-bottom: 8px;
 }
 
 .team-type {
   font-size: 16px;
   line-height: 1.5;
+  text-align: center;
+  margin-bottom: 32px;
 }
 
 /* PORTFOLIO SECTION */
@@ -263,6 +289,8 @@ img {
   text-align: center;
   text-transform: capitalize;
   color: var(--dark-color);
+
+  margin-bottom: 72px;
 }
 
 /* CARD TEXT */
@@ -277,6 +305,8 @@ img {
   font-size: 20px;
   line-height: 1.2;
   color: var(--dark-color);
+
+  margin-bottom: 8px;
 }
 
 .portfolio-type {
@@ -287,10 +317,13 @@ img {
 /* FOOTER */
 .footer-page {
   background-color: var(--dark-color);
+  padding: 100px 0;
 }
 
 .footer-text {
   font-size: 16px;
   line-height: 1.5;
   color: var(--cloud-color);
+  max-width: 264px;
+  margin-top: 16px;
 }
